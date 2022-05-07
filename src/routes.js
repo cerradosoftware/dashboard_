@@ -18,7 +18,7 @@ routes.get("/api/average/energy/power", ( req, res ) => {
 });
 
 routes.get('/api/daily/energy/performance', ( req, res ) => {
-  return res.json([{"date":"2016-12-21","performance":50.5},{"date":"2016-12-22","performance":63.099999999999994},{"date":"2016-12-23","performance":44.2},{"date":"2016-12-24","performance":58.3},{"date":"2016-12-25","performance":65},{"date":"2016-12-26","performance":53.2},{"date":"2016-12-27","performance":76.6},{"date":"2016-12-28","performance":44.6},{"date":"2016-12-29","performance":58.099999999999994},{"date":"2016-12-30","performance":35.9}]);
+  return res.json([{"date":"2016-12-21","performance":null},{"date":"2016-12-22","performance":63.099999999999994},{"date":"2016-12-23","performance":44.2},{"date":"2016-12-24","performance":58.3},{"date":"2016-12-25","performance":65},{"date":"2016-12-26","performance":53.2},{"date":"2016-12-27","performance":76.6},{"date":"2016-12-28","performance":44.6},{"date":"2016-12-29","performance":58.099999999999994},{"date":"2016-12-30","performance":null}]);
 });
 
 routes.get('/api/daily/energy/power', ( req, res ) => {
@@ -26,11 +26,11 @@ routes.get('/api/daily/energy/power', ( req, res ) => {
     {
       date: "2016-12-21",
       generatedPower: 20.05,
-      availablePower: 25.141767926859963,
+      availablePower: null,
     },
     {
       date: "2016-12-22",
-      generatedPower: 19.745,
+      generatedPower: null,
       availablePower: 25.109418121043287,
     },
     {
@@ -66,11 +66,11 @@ routes.get('/api/daily/energy/power', ( req, res ) => {
     {
       date: "2016-12-29",
       generatedPower: 20.505416666666665,
-      availablePower: 25.357242750286165,
+      availablePower: null,
     },
     {
       date: "2016-12-30",
-      generatedPower: 16.28708333333333,
+      generatedPower: null,
       availablePower: 25.24006400232699,
     },
   ]);
@@ -78,48 +78,7 @@ routes.get('/api/daily/energy/power', ( req, res ) => {
 
 routes.get('/api/daily/inflow', ( req, res ) => {
 
-  return res.json([
-    {
-    "date": "2016-12-30",
-    "inflow": 312.9964869294174
-    },
-    {
-    "date": "2016-12-27",
-    "inflow": 321.9182515911149
-    },
-    {
-    "date": "2016-12-24",
-    "inflow": null
-    },
-    {
-    "date": "2016-12-26",
-    "inflow": 338.407176703862
-    },
-    {
-    "date": "2016-12-21",
-    "inflow": 337.6060867962611
-    },
-    {
-    "date": "2016-12-23",
-    "inflow": 351.68691377271693
-    },
-    {
-    "date": "2016-12-25",
-    "inflow": 366.21229440936395
-    },
-    {
-    "date": "2016-12-28",
-    "inflow": 363.08127243747964
-    },
-    {
-    "date": "2016-12-31",
-    "inflow": 300.15587047042607
-    },
-    {
-    "date": "2016-12-22",
-    "inflow": 340.6381679010164
-    }
-  ]);
+  return res.json([{"date":"2022-04-28","inflow":280.9170611702595},{"date":"2022-04-29","inflow":428.17293645000547},{"date":"2022-04-30","inflow":328.0318999440638},{"date":"2022-05-01","inflow":237.05495506270645},{"date":"2022-05-02","inflow":198.389962546885},{"date":"2022-05-03","inflow":182.47194889444927},{"date":"2022-05-04","inflow":126.73634680263062},{"date":"2022-05-05","inflow":108.68522982422513},{"date":"2022-05-06","inflow":100.95753906755603},{"date":"2022-05-07","inflow":50.65740253242702}]);
 });
 
 const generateValue = () => {
