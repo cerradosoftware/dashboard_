@@ -18,52 +18,7 @@ routes.get("/api/average/energy/power", ( req, res ) => {
 });
 
 routes.get('/api/daily/energy/performance', ( req, res ) => {
-  return res.json([
-    {
-      date: "2016-12-21",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-22",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-23",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-24",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-25",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-26",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-27",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-28",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-29",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-30",
-      performance: generateValue(),
-    },
-    {
-      date: "2016-12-31",
-      performance: generateValue(),
-    },
-  ]);
+  return res.json([{"date":"2016-12-21","performance":50.5},{"date":"2016-12-22","performance":63.099999999999994},{"date":"2016-12-23","performance":44.2},{"date":"2016-12-24","performance":58.3},{"date":"2016-12-25","performance":65},{"date":"2016-12-26","performance":53.2},{"date":"2016-12-27","performance":76.6},{"date":"2016-12-28","performance":44.6},{"date":"2016-12-29","performance":58.099999999999994},{"date":"2016-12-30","performance":35.9},{"date":"2016-12-31","performance":72.4}]);
 });
 
 routes.get('/api/daily/energy/power', ( req, res ) => {
