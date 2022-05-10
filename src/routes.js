@@ -78,7 +78,7 @@ routes.get('/api/daily/energy/power', ( req, res ) => {
 
 routes.get('/api/daily/inflow', ( req, res ) => {
 
-  return res.json([{"date":"2022-04-28","inflow":280.9170611702595},{"date":"2022-04-29","inflow":428.17293645000547},{"date":"2022-04-30","inflow":328.0318999440638},{"date":"2022-05-01","inflow":237.05495506270645},{"date":"2022-05-02","inflow":198.389962546885},{"date":"2022-05-03","inflow":182.47194889444927},{"date":"2022-05-04","inflow":126.73634680263062},{"date":"2022-05-05","inflow":108.68522982422513},{"date":"2022-05-06","inflow":100.95753906755603},{"date":"2022-05-07","inflow":45}]);
+  return res.json([{"date":"2022-04-28","inflow":53},{"date":"2022-04-29","inflow":68},{"date":"2022-04-30","inflow":127},{"date":"2022-05-01","inflow":49},{"date":"2022-05-02","inflow":41},{"date":"2022-05-03","inflow":34},{"date":"2022-05-04","inflow":34},{"date":"2022-05-05","inflow":52},{"date":"2022-05-06","inflow":37},{"date":"2022-05-07","inflow":42}]);
 });
 
 const generateValue = () => {
