@@ -18,67 +18,67 @@ routes.get("/api/average/energy/power", ( req, res ) => {
 });
 
 routes.get('/api/daily/energy/performance', ( req, res ) => {
-  return res.json([{"date":"2016-12-21","performance":null},{"date":"2016-12-22","performance":63.099999999999994},{"date":"2016-12-23","performance":44.2},{"date":"2016-12-24","performance":58.3},{"date":"2016-12-25","performance":65},{"date":"2016-12-26","performance":53.2},{"date":"2016-12-27","performance":76.6},{"date":"2016-12-28","performance":44.6},{"date":"2016-12-29","performance":58.099999999999994},{"date":"2016-12-30","performance":null}]);
+  return res.json([{"date":"2016-12-21","performance":96.62},{"date":"2016-12-22","performance":96.48},{"date":"2016-12-23","performance":96.75},{"date":"2016-12-24","performance":96.48},{"date":"2016-12-25","performance":97.19},{"date":"2016-12-26","performance":97.44},{"date":"2016-12-27","performance":97.11},{"date":"2016-12-28","performance":98.22},{"date":"2016-12-29","performance":98.85},{"date":"2016-12-30","performance":96.97}]);
 });
 
 routes.get('/api/daily/energy/power', ( req, res ) => {
   return res.json([
     {
       date: "2016-12-21",
-      generatedPower: 20.05,
-      availablePower: null,
+      generatedPower: 25.37,
+      availablePower: 25.37,
     },
     {
       date: "2016-12-22",
-      generatedPower: null,
-      availablePower: 25.109418121043287,
+      generatedPower: 25.41,
+      availablePower: 25.41,
     },
     {
       date: "2016-12-23",
-      generatedPower: null,
-      availablePower: null,
+      generatedPower: 24.08,
+      availablePower: 24.08,
     },
     {
       date: "2016-12-24",
-      generatedPower: 24.9,
-      availablePower: 25.02,
+      generatedPower: 22.57,
+      availablePower: 22.57,
     },
     {
       date: "2016-12-25",
-      generatedPower: 23.2,
-      availablePower: 23.4,
+      generatedPower: 16.17,
+      availablePower: 16.17,
     },
     {
       date: "2016-12-26",
-      generatedPower: 8.9,
-      availablePower: 25.02,
+      generatedPower: 13.85,
+      availablePower: 13.85,
     },
     {
       date: "2016-12-27",
-      generatedPower: 17.38,
-      availablePower: 25.175921453401592,
+      generatedPower: 12.79,
+      availablePower: 12.79,
     },
     {
       date: "2016-12-28",
-      generatedPower: 21.48086956521739,
-      availablePower: 25.610399091768844,
+      generatedPower: 3,
+      availablePower: 6.44,
     },
     {
       date: "2016-12-29",
-      generatedPower: 20.505416666666665,
-      availablePower: null,
+      generatedPower: 14.84,
+      availablePower: 14.84,
     },
     {
       date: "2016-12-30",
-      generatedPower: null,
-      availablePower: 25.24006400232699,
+      generatedPower: 12.18,
+      availablePower: 12.18,
     },
   ]);
 });
 
 routes.get('/api/daily/inflow', ( req, res ) => {
 
-  return res.json([{"date":"2022-04-28","inflow":280.9170611702595},{"date":"2022-04-29","inflow":428.17293645000547},{"date":"2022-04-30","inflow":328.0318999440638},{"date":"2022-05-01","inflow":237.05495506270645},{"date":"2022-05-02","inflow":198.389962546885},{"date":"2022-05-03","inflow":182.47194889444927},{"date":"2022-05-04","inflow":126.73634680263062},{"date":"2022-05-05","inflow":108.68522982422513},{"date":"2022-05-06","inflow":100.95753906755603},{"date":"2022-05-07","inflow":0}]);
+  return res.json([{"date":"2022-04-28","inflow":280.9170611702595},{"date":"2022-04-29","inflow":428.17293645000547},{"date":"2022-04-30","inflow":328.0318999440638},{"date":"2022-05-01","inflow":237.05495506270645},{"date":"2022-05-02","inflow":198.389962546885},{"date":"2022-05-03","inflow":182.47194889444927},{"date":"2022-05-04","inflow":126.73634680263062},{"date":"2022-05-05","inflow":108.68522982422513},{"date":"2022-05-06","inflow":100.95753906755603},{"date":"2022-05-07","inflow":45}]);
 });
 
 const generateValue = () => {
